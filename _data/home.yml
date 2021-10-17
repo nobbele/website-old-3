@@ -1,0 +1,56 @@
+navbar_entries:
+  - title: home
+    url: /
+
+  - title: blog
+    url: blog
+
+  - title: about
+    url: about
+
+project_entries:
+  - title: Novel Tracker
+    url: https://novel-tracker.vercel.app
+    desc: (Light) Novel tracking and database.
+    highlight: WIP
+
+  - title: (Maintainer) ggez
+    url: https://github.com/ggez/ggez
+    desc: Rust game library inspired by Löve2D.
+
+old_project_entries:
+  - title: NS Engine
+    url: https://github.com/nobbele/ns-engine
+    desc: Visual Novel Engine.
+
+  - title: Lunar Lander Remake
+    url: https://thejayduck.itch.io/lunar-lander-remake
+    desc: A game for the 2019 Polyrealm Game Jam.
+
+  - title: Treasured Memories
+    url: https://thejayduck.itch.io/treasured-memories
+    desc: A visual novel that I wrote the story for.
+
+  - title: Shogi Client
+    url: https://github.com/nobbele/ShogiClient
+    desc: Shogi game for a school assignment.
+
+  - title: AntiPVP
+    url: https://github.com/nobbele/AntiPVP
+    desc: Minecraft Spigot plugin to disable pvp damage while allowing hits.
+
+  - title: CreeperGriefManipulator
+    url: https://github.com/nobbele/CreeperGriefManipulator
+    desc: Minecraft Spigot plugin to nerf creeper griefing on terrain.
+
+footer_entries:
+  - title: twitter
+    url: https://twitter.com/Nobbele2
+
+  - title: github
+    url: https://github.com/nobbele
+
+  - title: feed
+    url: feed.xml
+
+misc_entries:
