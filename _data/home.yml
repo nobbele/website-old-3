@@ -9,9 +9,9 @@ navbar_entries:
     url: about
 
 project_entries:
-  - title: Novel Tracker
-    url: https://novel-tracker.vercel.app
-    desc: (Light) Novel tracking and database.
+  - title: CTB Web
+    url: https://github.com/nobbele/ctb-web
+    desc: Catch The Beat game.
     highlight: WIP
 
   - title: (Maintainer) ggez
@@ -19,6 +19,11 @@ project_entries:
     desc: Rust game library inspired by Löve2D.
 
 old_project_entries:
+  - title: Novel Tracker
+    url: https://novel-tracker.vercel.app
+    desc: (Light) Novel tracking and database.
+    highlight: WIP
+
   - title: NS Engine
     url: https://github.com/nobbele/ns-engine
     desc: Visual Novel Engine.
