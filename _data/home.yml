@@ -18,6 +18,10 @@ project_entries:
     url: https://github.com/ggez/ggez
     desc: Rust game library inspired by Löve2D.
 
+  - title: Project BioBot
+    url: https://semikoder.itch.io/project-biobot
+    desc: Puzzle game collaboration for a game jam.
+
 old_project_entries:
   - title: Novel Tracker
     url: https://novel-tracker.vercel.app
