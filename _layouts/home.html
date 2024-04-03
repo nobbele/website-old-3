@@ -2,35 +2,28 @@
 layout: default
 ---
 
-<h1>{{ site.title }}</h1>
+<div id="site-title">
+  <img src="/images/avatar.png" />
+  <div id="site-title-text">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.bio }}</p>
+  </div>
+</div>
 {% if site.theme_config.show_description == true %}
 <p>{{ site.description }}</p>
-{% endif %}
-
-{{ content }}
-
-{% if site.theme_config.show_projects == true %}
-<h2>{{ site.theme_config.home.title_projects }}</h2>
-{% include card_list.html collection=site.data.home.project_entries %}
-{% endif %}
-
-{% if site.theme_config.show_misc_list == true %}
-<h2>{{ site.theme_config.home.title_misc_list }}</h2>
-{% include vertical_list.html collection=site.data.home.misc_entries %}
-{% endif %}
-
-{% if site.theme_config.show_blog == true %}
+{% endif %} {{ content }}
+<h2>Interests</h2>
+{% include interest_list.html collection=site.data.home.interests %} {% if
+site.theme_config.show_blog == true %}
 <h2>{{ site.theme_config.home.title_blog }}</h2>
-{% include post_list.html %}
-{% endif %}
-
-{% if site.theme_config.show_old_projects == true %}
-<h2>{{ site.theme_config.home.title_old_projects }}</h2>
-{% include card_list.html collection=site.data.home.old_project_entries %}
-{% endif %}
-
-
-{% if site.theme_config.show_footer == true %}
+{% include post_list.html %} {% endif %} {% if site.theme_config.show_projects
+== true %}
+<h2>{{ site.theme_config.home.title_projects }}</h2>
+{% include card_list.html collection=site.data.home.project_entries %} {% endif
+%} {% if site.theme_config.show_misc_list == true %}
+<h2>{{ site.theme_config.home.title_misc_list }}</h2>
+{% include vertical_list.html collection=site.data.home.misc_entries %} {% endif
+%} {% if site.theme_config.show_footer == true %}
 <footer>
   <div class="dashed"></div>
   {% include horizontal_list.html collection=site.data.home.footer_entries %}

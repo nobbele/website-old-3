@@ -1,0 +1,29 @@
+<ul id="interest-list">
+{% for item in include.collection %}
+    {% if item.entries %}
+    <li class="interest-list-item tall">
+    {% else %}
+    <li class="interest-list-item">
+    {% endif %}
+        {% if item.url %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+        {% else %}
+            <p>{{ item.title }}</p>
+        {% endif %}
+        {% if item.entries %}
+        <hr>
+        <ul class="entries">
+        {% for entry in item.entries %}
+            <li class="entries-item">
+                {% if entry.url %}
+                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                {% else %}
+                    <p>{{ entry.title }}</p>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>

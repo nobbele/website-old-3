@@ -1,16 +1,17 @@
 title: nobbele's website
 author: nobbele
+bio: Bi Autistic catgirl :3
 url: https://nobbele.dev
 description: >
-  Showcase for various projects and blog where I explain things
+  I'm studying for a CS bachelor's degree while working as a frontend developer!
 
 permalink: /:slug.html
 
-favicon: "./logo.png" # relative path to site's favicon
+favicon: ./logo.png # relative path to site's favicon
 
 twitter:
-    username: Nobbele2 # update or delete this
-    card: summary_large_image
+  username: Nobbele2 # update or delete this
+  card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
@@ -19,7 +20,7 @@ theme_config:
   appearance: "dark" # can be "light", "dark" or "auto"
   appearance_toggle: true # if appearance can be switched by user
   back_home_text: "home.." # customize text for homepage link in post layout
-  date_format: "%Y-%m-%d" # customize how date is formatted
+  date_format: "%-d %B %Y" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
   show_footer: true # show footer links in home page,add in _data/home.yml
@@ -27,19 +28,18 @@ theme_config:
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: true # show blog posts added in _posts
-  show_old_projects: true # show old projects as cards, add in _data/home.yml
   show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
   # options for "home" page
   home:
     title_projects: Projects
     title_misc_list: Details
     title_blog: Blog
-    title_old_projects: Non-active Projects
 
 highlighter: rouge
 
 sass:
   style: :compressed
+  sass_dir: _sass
 
 plugins:
   - jekyll-feed

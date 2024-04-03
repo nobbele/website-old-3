@@ -8,25 +8,43 @@ navbar_entries:
   - title: about
     url: about
 
-project_entries:
-  - title: CTB Web
-    url: https://github.com/nobbele/ctb-web
-    desc: Catch The Beat game.
-    highlight: WIP
+interests:
+  - title: Programming
+    url: https://github.com/nobbele
+  - title: Touhou
+  - title: Manga and Light Novels
+    url: https://anilist.co/user/nobbele/
+  - title: Rhythm Games
+    entries:
+      - title: osu! and osu!taiko
+        url: https://osu.ppy.sh/users/10006423
+      - title: Dance Dance Revolution / StepMania (pad)
+      - title: SDVX, Jubeat
 
-  - title: (Maintainer) ggez
-    url: https://github.com/ggez/ggez
-    desc: Rust game library inspired by Löve2D.
+project_entries:
+  - title: RMC
+    url: https://github.com/nobbele/rmc
+    desc: Rusty voxel game using OpenGL.
+
+  - title: Chip8HS
+    url: https://github.com/nobbele/Chip8HS
+    desc: Chip8 emulator written in Haskell.
 
   - title: Project BioBot
     url: https://semikoder.itch.io/project-biobot
     desc: Puzzle game collaboration for a game jam.
 
-old_project_entries:
+  - title: CTB Web
+    url: https://github.com/nobbele/ctb-web
+    desc: Catch The Beat game.
+
+  - title: (Maintainer) ggez
+    url: https://github.com/ggez/ggez
+    desc: Rust game library inspired by Löve2D.
+
   - title: Novel Tracker
     url: https://novel-tracker.vercel.app
     desc: (Light) Novel tracking and database.
-    highlight: WIP
 
   - title: NS Engine
     url: https://github.com/nobbele/ns-engine

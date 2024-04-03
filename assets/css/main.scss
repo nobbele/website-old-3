@@ -8,3 +8,87 @@
 html {
   scrollbar-color: #808080 #202020;
 }
+
+* {
+  margin-block: initial;
+}
+
+// h1, h2, h3, h4, h5 {
+//   margin-top: initial;
+// }
+
+#site-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+
+  > #site-title-text {
+    display: flex;
+    flex-direction: column;
+
+    > h1 {
+      line-height: 1em;
+    }
+
+    > h1, > p {
+      margin-block: initial;
+    }
+  }
+
+  > img {
+    max-width: initial;
+    margin: initial;
+
+    display: inline;
+    width: 64px;
+    height: 64px;
+    aspect-ratio: 1/1;
+
+    border-radius: 25%;
+  }
+}
+
+ul#interest-list {
+  display: grid;
+  margin-top: 0em;
+  margin-left: -40px;
+  // flex-wrap: wrap;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+
+  .tall {
+    grid-row: span 3;
+  }
+
+  .interest-list-item {
+    display:inline;
+    margin-right: 1em;
+    margin-bottom: 0.8em;
+
+    padding: 1em;
+    border: 1px var(--text) solid;
+    text-align: center;
+    font-size: 1em;
+    align-items: center;
+    background-color: var(--bg-secondary);
+    border-radius: 0.8em;
+
+    a, p {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .entries {
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+
+      .entries-item {
+        display:inline;
+      }
+    }
+  }
+}
